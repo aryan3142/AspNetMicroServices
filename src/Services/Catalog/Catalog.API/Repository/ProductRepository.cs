@@ -17,7 +17,7 @@ namespace Catalog.API.Repository
             _context = context;
         }
 
-        public async Task CreatProduct(Product product)
+        public async Task CreateProduct(Product product)
         {
             await _context.Products.InsertOneAsync(product);
         }
